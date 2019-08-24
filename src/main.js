@@ -32,6 +32,11 @@ Object.keys(directive).forEach((key) => {
   Vue.directive(key, directive[key])
 })
 
+import './es6/index.js'
+
+import { myFn1 } from './es6/es6'
+
+myFn1('贾永超')
 /**
  * message bus
  */
